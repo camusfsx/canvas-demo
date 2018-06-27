@@ -1,14 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel=stylesheet type="text/css" href="css/style.css">
+    <script src="//at.alicdn.com/t/font_722415_v7x66mn1m8.js
+    " charset="utf-8" async defer></script>
     <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
     <title>Document</title>
 </head>
+
 <body>
+    <canvas></canvas>
+    <div class="iconList clearfix">
+        <svg class="icon eraser" aria-hidden="true">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg class="icon pen active" aria-hidden="true">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+        <svg class="icon brush" aria-hidden="true">
+            <use xlink:href="#icon-brush"></use>
+        </svg>
+        <svg class="icon palette" aria-hidden="true">
+            <use xlink:href="#icon-palette"></use>
+        </svg>
+        <svg class="icon download" aria-hidden="true">
+            <use xlink:href="#icon-download"></use>
+        </svg>
+    </div>
+    <input class="paletteBox" type="color" value="#000000">
+    <div class="colorShow"></div>
 </body>
+
 </html>

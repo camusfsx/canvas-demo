@@ -1,1 +1,45 @@
-
+body{
+    display: grid;
+    position: relative;
+}
+canvas{
+    display: block;
+    margin:auto;
+    border:1px solid black;
+}
+.iconList{
+    position: absolute;
+    top:80%;
+    left:70%;
+}
+.icon {
+    float: left;
+    width: 4vw; 
+    height: 4vw;
+    fill: currentColor;
+    overflow: hidden;
+    color:#ddd;
+    transition: all 400ms;
+}
+.active{
+    width:5vw;
+    height:5vw;
+    color:#000;
+}
+.clearfix::after{
+     content: '';
+     clear: both;
+     display: block;
+}
+.paletteBox{
+    display: none;
+}
+.colorShow{
+    position: absolute;
+    top:80%;
+    left:60%;
+    width:4vw;
+    height:4vw;
+    border-radius: 50%;
+    background: #000;
+}
