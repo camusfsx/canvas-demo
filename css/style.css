@@ -1,45 +1,46 @@
-body{
-    display: grid;
-    position: relative;
+body {
+  font-size: 16px;
+  display: grid;
+  position: relative;
 }
-canvas{
-    display: block;
-    margin:auto;
-    border:1px solid black;
+canvas {
+  display: block;
+  margin: auto;
+  border: 1px solid black;
 }
-.iconList{
-    position: absolute;
-    top:80%;
-    left:70%;
+.iconList {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
 }
 .icon {
-    float: left;
-    width: 4vw; 
-    height: 4vw;
-    fill: currentColor;
-    overflow: hidden;
-    color:#ddd;
-    transition: all 400ms;
+  float: left;
+  width: 0.4rem;
+  height: 0.4rem;
+  fill: currentColor;
+  overflow: hidden;
+  color: #ddd;
+  transition: all 400ms;
 }
-.active{
-    width:5vw;
-    height:5vw;
-    color:#000;
+.active {
+  width: 0.5rem;
+  height: 0.5rem;
+  color: #000;
 }
-.clearfix::after{
-     content: '';
-     clear: both;
-     display: block;
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
 }
-.paletteBox{
-    display: none;
+.paletteBox {
+  display: none;
 }
-.colorShow{
-    position: absolute;
-    top:80%;
-    left:60%;
-    width:4vw;
-    height:4vw;
-    border-radius: 50%;
-    background: #000;
+.colorShow {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #000;
 }

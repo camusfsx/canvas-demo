@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel=stylesheet type="text/css" href="css/style.css">
     <script src="//at.alicdn.com/t/font_722415_v7x66mn1m8.js
-    " charset="utf-8" async defer></script>
-    <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+    " charset="utf-8" defer></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8" defer></script>
     <title>Document</title>
 </head>
 
@@ -34,5 +34,8 @@
     <input class="paletteBox" type="color" value="#000000">
     <div class="colorShow"></div>
 </body>
+<script>let pageWidth = window.innerWidth / 10//这里可以用设备宽度/(设计宽度/100) 但是这个作品没有设计稿hhhhhh
+    document.write(`<style>html{font-size:${pageWidth}px}</style>`)
+</script>
 
 </html>

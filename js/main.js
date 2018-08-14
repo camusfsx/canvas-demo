@@ -1,14 +1,14 @@
 let canvas = document.getElementsByTagName(`canvas`)[0]
-let iconList = document.getElementsByClassName(`iconList`)[0].children
-let eraserButton = document.getElementsByClassName(`eraser`)[0]
-let penButton = document.getElementsByClassName(`pen`)[0]
-let brushButton =document.getElementsByClassName(`brush`)[0]
-let paletteButton = document.getElementsByClassName(`palette`)[0]
-let downloadButton =document.getElementsByClassName(`download`)[0]
-let paletteBox = document.getElementsByClassName(`paletteBox`)[0]
-let colorShow = document.getElementsByClassName(`colorShow`)[0]
-let context = canvas.getContext(`2d`)
-let [areYouPaint, areYouClear, lastX, lastY,lineWidth] = [false, false, 0, 0,2]
+    , iconList = document.getElementsByClassName(`iconList`)[0].children
+    , eraserButton = document.getElementsByClassName(`eraser`)[0]
+    , penButton = document.getElementsByClassName(`pen`)[0]
+    , brushButton = document.getElementsByClassName(`brush`)[0]
+    , paletteButton = document.getElementsByClassName(`palette`)[0]
+    , downloadButton = document.getElementsByClassName(`download`)[0]
+    , paletteBox = document.getElementsByClassName(`paletteBox`)[0]
+    , colorShow = document.getElementsByClassName(`colorShow`)[0]
+    , context = canvas.getContext(`2d`)
+    , [areYouPaint, areYouClear, lastX, lastY, lineWidth] = [false, false, 0, 0, 2]
 for (let i = 0; i < iconList.length; i++) {
     iconList[i].addEventListener(`click`, ((k) => {
         return () => {
@@ -26,7 +26,7 @@ penButton.addEventListener(`click`, () => {
     areYouClear = false
     lineWidth = 2
 })
-brushButton.addEventListener(`click`,()=>{
+brushButton.addEventListener(`click`, () => {
     areYouClear = false
     lineWidth = 6
 })
@@ -37,7 +37,7 @@ paletteButton.addEventListener(`click`, () => {
         colorShow.style.background = paletteBox.value
     }
 })
-downloadButton.addEventListener(`click`,()=>{
+downloadButton.addEventListener(`click`, () => {
     let pngData = canvas.toDataURL(`img/canvas`)
     let pngA = document.createElement(`a`)
     document.body.appendChild(pngA)
@@ -113,7 +113,7 @@ function paintDot(x, y, size = 1) {
 }
 function paintLine(x, y) {
     context.beginPath()
-    context.lineWidth=lineWidth
+    context.lineWidth = lineWidth
     context.moveTo(lastX, lastY)
     context.lineTo(x, y)
     context.stroke()
